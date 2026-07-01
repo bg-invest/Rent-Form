@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Residential Rental Application</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <header>
+    <div class="hero-text">
+      <h1>Residential Rental<br>Application Form</h1>
+      <p>Please fill out the form below to apply for a rental property.</p>
+    </div>
+
+    <div class="house" style="width: 190px; height: 190px;">
+      <img src="House.jpeg" alt="House" style="width: 100%; height: 100%;">
+    </div>
+  </header>
+
+
+  <form id="rentalForm">
+
+    <h2>Applicant's Name</h2>
+
+    <div class="row">
+      <div>
+        <input type="text" placeholder="First Name" required>
+      </div>
+
+      <div>
+        <input type="text" placeholder="Last Name" required>
+      </div>
+    </div>
+
+
+    <label>Phone Number</label>
+    <input type="tel" placeholder="(000) 000-0000" required>
+
+     <label>Email</label>
+    <input type="email" placeholder="you@example.com" required>
+
+
+    <label>Date of Birth</label>
+    <input type="date" required>
+
+
+    <h2 style="margin-top: 15px;margin-bottom: 15px;">Do you have a Vehicle?</h2>
+
+    <div class="radio" style="margin-top:0px;">
+      <label>
+        <input type="radio" name="vehicle" >
+        Yes
+      </label>
+
+      <label>
+        <input type="radio" name="vehicle">
+        No
+      </label>
+    </div>
+
+
+    <label>Occupation / Job Title?</label>
+    <input type="text" placeholder="e.g Software Engineer" required>
+
+    <label>Number of person who will occupy the property</label>
+    <input type="text" placeholder="e.g 3" required>
+
+    <p style="margin-top: 15px;margin-bottom: 15px;">Please state name of other occupants and their relationship to you.</p>
+
+    <label>Name</label>
+    <input type="text" required>
+    <label>Relationship</label>
+    <input type="text" required>
+     <label>Age</label>
+    <input type="text" required>
+     <label>Gender</label>
+    <input type="text" required>
+    <hr style="margin-top: 15px;margin-bottom: 15px;">
+
+     <label>Name</label>
+    <input type="text" required>
+    <label>Relationship</label>
+    <input type="text" required>
+     <label>Age</label>
+    <input type="text" required>
+     <label>Gender</label>
+    <input type="text" required>
+    <hr style="margin-top: 15px;margin-bottom: 15px;">
+
+     <label>Name</label>
+    <input type="text" required>
+    <label>Relationship</label>
+    <input type="text" required>
+     <label>Age</label>
+    <input type="text" required>
+     <label>Gender</label>
+    <input type="text" required>
+    
+
+    <p style="margin-top: 10px;"> Is there more than three occupants?</p>
+
+    <div class="radio" style="margin-top:0px;">
+      <label>
+        <input type="radio" name="vehicle" >
+        Yes
+      </label>
+
+      <label>
+        <input type="radio" name="vehicle">
+        No
+      </label>
+    </div>
+      <hr style="margin-top: 15px;margin-bottom: 15px;">
+    <p style="margin-top: 15px;"> Do you have pet?</p>
+
+    <div class="radio" style="margin-top:0px;">
+      <label>
+        <input type="radio" name="vehicle" >
+        Yes
+      </label>
+
+      <label>
+        <input type="radio" name="vehicle">
+        No
+      </label>
+    </div>
+
+    <label>Current Address</label>
+    <input type="text" required>
+    <label style="font-size: medium;">Street Address</label>
+    <input type="text" required>
+     <label style="font-size: medium;">Street Address Line 2</label>
+    <input type="text" required>
+     <label style="font-size: medium;">City</label>
+    <input type="text" required>
+    <label style="font-size: medium;">State / province</label>
+    <input type="text" required>
+    <label style="font-size: medium;">Postal / Zip Code</label>
+    <input type="text" required>
+    <hr style="margin-top: 15px;margin-bottom: 15px;">
+
+    <label>Duration of Occupancy</label>
+    <input type="text" placeholder="e.g 2 years" required>
+
+    <!-- <label>Reason(s) of leaving</label>
+    <input type="text" style="height: 120px;padding:0px 10px;"> -->
+
+    
+    <label>Move In Date</label>
+    <input type="date" required>
+
+    <label>Date to pay the security deposit </label>
+    <input type="date" required>
+
+    <h3 style="color: rgb(62, 62, 60); margin-top: 20px;"> $96 Refundable Aplication fee </h3>
+
+    <p style="margin-top: 15px; margin-bottom: 10px;">Preferred payment method:</p>
+    <div class="payment-options">
+      <label>
+        <input type="radio" name="paymentMethod" value="chime">
+        Chime
+      </label>
+
+      <label>
+        <input type="radio" name="paymentMethod" value="paypal">
+        Bitcoin
+      </label>
+
+      <label>
+        <input type="radio" name="paymentMethod" value="cashapp">
+        Cash App
+      </label>
+
+      <label>
+        <input type="radio" name="paymentMethod" value="zelle">
+        PayPal
+      </label>
+
+      <label>
+        <input type="radio" name="paymentMethod" value="bitcoin">
+        Zelle
+      </label>
+    </div>
+
+    <button type="submit" class="submit-button">
+      Submit Application
+    </button>
+
+
+    <p class="security">
+      🔒 Your information is secure and confidential.
+    </p>
+
+
+  </form>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
