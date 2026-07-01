@@ -24,139 +24,94 @@
   </header>
 
 
-  <form id="rentalForm">
+  <form action="https://api.web3forms.com/submit" method="POST">
+          <!-- Required access key -->
+          <input type="hidden" name="access_key" value="59828bf6-0ac5-4fe5-bd66-3f05bec55bdc">
 
     <h2>Applicant's Name</h2>
 
     <div class="row">
       <div>
-        <input type="text" placeholder="First Name" required>
+        <input type="text" name="Firstname" placeholder="First Name" required>
       </div>
 
       <div>
-        <input type="text" placeholder="Last Name" required>
+        <input type="text" name="Lastname" placeholder="Last Name" required>
       </div>
     </div>
 
 
     <label>Phone Number</label>
-    <input type="tel" placeholder="(000) 000-0000" required>
+    <input type="tel" name="Phone" placeholder="(000) 000-0000" required>
 
      <label>Email</label>
-    <input type="email" placeholder="you@example.com" required>
+    <input type="email" name="Email" placeholder="you@example.com" required>
 
 
     <label>Date of Birth</label>
-    <input type="date" required>
+    <input type="date" name="DateOfBirth" required>
 
 
     <h2 style="margin-top: 15px;margin-bottom: 15px;">Do you have a Vehicle?</h2>
 
     <div class="radio" style="margin-top:0px;">
       <label>
-        <input type="radio" name="vehicle" >
+        <input type="radio" name="vehicle" value="Yes">
         Yes
       </label>
 
       <label>
-        <input type="radio" name="vehicle">
+        <input type="radio" name="vehicle" value="No">
         No
       </label>
     </div>
 
 
     <label>Occupation / Job Title?</label>
-    <input type="text" placeholder="e.g Engineer" required>
+    <input type="text" name="Occupation" placeholder="e.g Engineer" required>
 
     <label>Number of person who will occupy the property</label>
-    <input type="text" placeholder="e.g 3" required>
+    <input type="text" name="Occupants" placeholder="e.g 3" required>
 
-    <p style="margin-top: 15px;margin-bottom: 15px;">Please state name of other occupants and their relationship to you.</p>
-
-    <label>Name</label>
-    <input type="text" required>
-    <label>Relationship</label>
-    <input type="text" required>
-     <label>Age</label>
-    <input type="text" required>
-     <label>Gender</label>
-    <input type="text" required>
-    <hr style="margin-top: 15px;margin-bottom: 15px;">
-
-     <label>Name</label>
-    <input type="text" required>
-    <label>Relationship</label>
-    <input type="text" required>
-     <label>Age</label>
-    <input type="text" required>
-     <label>Gender</label>
-    <input type="text" required>
-    <hr style="margin-top: 15px;margin-bottom: 15px;">
-
-     <label>Name</label>
-    <input type="text" required>
-    <label>Relationship</label>
-    <input type="text" required>
-     <label>Age</label>
-    <input type="text" required>
-     <label>Gender</label>
-    <input type="text" required>
-    
-
-    <p style="margin-top: 10px;"> Is there more than three occupants?</p>
-
-    <div class="radio" style="margin-top:0px;">
-      <label>
-        <input type="radio" name="vehicle" >
-        Yes
-      </label>
-
-      <label>
-        <input type="radio" name="vehicle">
-        No
-      </label>
-    </div>
+   
       <hr style="margin-top: 15px;margin-bottom: 15px;">
     <p style="margin-top: 15px;"> Do you have pet?</p>
 
     <div class="radio" style="margin-top:0px;">
       <label>
-        <input type="radio" name="vehicle" >
+        <input type="radio" name="pet" value="Yes">
         Yes
       </label>
 
       <label>
-        <input type="radio" name="vehicle">
+        <input type="radio" name="pet" value="No">
         No
       </label>
     </div>
 
     <label>Current Address</label>
-    <input type="text" required>
+    <input type="text" name="CurrentAddress" required>
     <label style="font-size: medium;">Street Address</label>
-    <input type="text" required>
+    <input type="text" name="StreetAddress" required>
      <label style="font-size: medium;">Street Address Line 2</label>
-    <input type="text" required>
+    <input type="text" name="StreetAddress2" required>
      <label style="font-size: medium;">City</label>
-    <input type="text" required>
+    <input type="text" name="City" required>
     <label style="font-size: medium;">State / province</label>
-    <input type="text" required>
+    <input type="text" name="State" required>
     <label style="font-size: medium;">Postal / Zip Code</label>
-    <input type="text" required>
+    <input type="text" name="PostalCode" required>
     <hr style="margin-top: 15px;margin-bottom: 15px;">
 
     <label>Duration of Occupancy</label>
-    <input type="text" placeholder="e.g 2 years" required>
-
-    <!-- <label>Reason(s) of leaving</label>
-    <input type="text" style="height: 120px;padding:0px 10px;"> -->
+    <input type="text" name="DurationOfOccupancy" placeholder="e.g 2 years" required>
 
     
+    
     <label>Move In Date</label>
-    <input type="date" required>
+    <input type="date" name="MoveInDate" required>
 
-    <label>Date to pay the security deposit </label>
-    <input type="date" required>
+  
 
     <h3 style="color: rgb(62, 62, 60); margin-top: 20px;"> $96 Refundable Aplication fee </h3>
 
@@ -182,10 +137,7 @@
         PayPal
       </label>
 
-      <label>
-        <input type="radio" name="paymentMethod" value="bitcoin">
-        Zelle
-      </label>
+     
     </div>
 
     <button type="submit" class="submit-button">
